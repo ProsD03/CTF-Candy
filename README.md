@@ -165,6 +165,9 @@ Automatic archive unzipping:
 * LFI / RFI (PHP Wrappers)
         I recommend this page from [rawsec](https://rawsec.ml/en/local-file-inclusion-remote-code-execution-vulnerability/)
 
+* Vulerable PHP Functions
+        Check for any vulnerable function in the php source code. A list of vulnerable funtion is avaiable [here](https://gist.github.com/mccabe615/b0907514d34b2de088c4996933ea1720)
+
 #### Well.. I've found nothing
 
 If you have not found something by now. You may want to run a fuzzer.
