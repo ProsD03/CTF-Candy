@@ -60,11 +60,18 @@ Here you have to manually try to enter some stuff to understand more about the a
         This will often lead to a 500 internal error message, and might sometimes reveal information about the application and/or webserver.
 
 * `?exec=5*5`
+        If it returns *25* we have  `command injection`.
+        Backend is probably running: `eval($_GET['exec'])`
 
-    If it returns *25* we have  `command injection`.
-    Backend is probably running: `eval($_GET['exec'])`
-
-
+### SQL Injections
+*  If we have a MySQL query like this:
+    ```mysql
+    "INSERT INTO users(username,password,admin) VALUES ('" . $username . "','" . $password . "',false);"
+    ```
+    the possibile MySQL injection is:
+    ```mysql
+    admin','admin',true)#
+    ```
 
 #### Form data
 
