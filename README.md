@@ -64,15 +64,18 @@ Here you have to manually try to enter some stuff to understand more about the a
         Backend is probably running: `eval($_GET['exec'])`
 
 ### SQL Injections
-*  If we have a MySQL query like this:
+* If we have a MySQL query like this:
+
     ```mysql
     "INSERT INTO users(username,password,admin) VALUES ('" . $username . "','" . $password . "',false);"
     ```
+    
     the possibile MySQL injection is:
+    
     ```mysql
     admin','admin',true)#
     ```
-
+* TODO 
 #### Form data
 
 * `Hidden form field` - If you find something like this, throw everything you got at the debug parameter, this is often a simple command injection.
