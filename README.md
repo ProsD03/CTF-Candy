@@ -393,7 +393,8 @@ Use your favorite `fuzzer`. Here are some good ones:
 
 * RSA
         
-        The first thing you can try if you know the encrypted message and the public exponent E is to do the e-root of the encrypted message. If the result is an         integer, you may have found the message. This happens when m^e is stricty lower than N.
+        - The first thing you can try if you know the encrypted message and the public exponent E is to do the e-root of the encrypted message. 
+        If the result is an integer, you may have found the message. This happens when m^e is stricty lower than N.
 
 ## Forensics
 
