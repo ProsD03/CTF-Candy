@@ -390,6 +390,10 @@ Use your favorite `fuzzer`. Here are some good ones:
         Tips:
         - Use CLUES
         - Try all modes
+     
+* [Many Time Pad](https://github.com/CameronLonsdale/MTP)
+        
+        If you are given more than one string crypted with OTP, you can try to use a statistic attack to find the key and the plaintext (MTP Attack)
 
 * RSA
         
