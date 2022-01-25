@@ -16,6 +16,7 @@ A good recommendation is try to find stuff that is out of the ordinary.
 * Burpsuite for request manipulation
 * Python with requests lib for automation
 * ngrok for XSS
+* searchsploit to find any know exploits
 
 
 #### Injection in GET parameter
