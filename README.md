@@ -15,8 +15,9 @@ A good recommendation is try to find stuff that is out of the ordinary.
 * ZAP with generic reconnaissance
 * Burpsuite for request manipulation
 * Python with requests lib for automation
-* ngrok for XSS
+* ngrok to create outbound/inbound connections to computer
 * searchsploit to find any know exploits
+* linPEAS for reconnaissance inside a system
 
 
 #### Injection in GET parameter
